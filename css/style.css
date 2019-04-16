@@ -1,0 +1,241 @@
+ 
+  body {
+    background-color: #cccccc;
+  }
+  /* The device with borders */
+  .smartphone {
+    position: relative;
+    width: 280px;
+    height: 440px;
+    margin: auto;
+    margin-top: 2%;
+    border: 6px black solid;
+    border-top-width: 40px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+  }
+
+  /* The horizontal line on the top of the device */
+  .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  }
+
+  /* The circle on the bottom of the device */
+  .smartphone:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #333;
+
+  }
+
+  /* The screen (or content) of the device */
+  .smartphone .content {
+    width: 280px;
+    height: 450px;
+    background: white;
+       background: #636FA4;  /* fallback for old browsers */
+  
+  }
+
+  /* header section */
+
+  .headstart {
+    background-color: black;
+    height: 35px;
+  }
+
+  .heading {
+    background-color: black;
+  }
+
+  .fa{
+    margin-top: 2%;
+    margin-left: 2%;
+    color: white;
+  }
+
+  #percent {
+      color: white;
+      font-size: 22px;
+  }
+
+  #hors {
+    float: right;
+    margin-right: 2%;
+    font-size: 22px;
+    color: white;
+    margin-top: 3%;
+  }
+
+  /* main section */
+.container{
+    position: relative;
+    background: linear-gradient(45deg,#69d9e2, #003da2);   
+    width: 100%;
+    height: 420px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#addBox {
+    position: relative;
+    display: block;
+    background: #003da2;
+    width: 100%;
+    height: 35px;
+    margin-top: 5%;
+    border-radius: 4px;
+}
+input {
+    width: 60%;
+    background: none;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 5px;
+    margin-top: 4px;
+    color: #fbfbfb;
+    margin-left: 14%;
+    font-size: 16px;
+}
+#txt::placeholder {
+    color: white
+}
+
+#plus {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin: 5px 0px 5px 10px;
+}
+#plus::before{
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f067";
+    color: white;
+    font-size: 24px;
+}
+#plus:hover::before{
+    margin-top: -3px;
+    margin-left: -3px;
+    font-size: 28px;
+}
+#list {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+    overflow: scroll;
+}
+.box {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: scroll;
+    height: 42px;
+    margin: 5px 0px 5px 0px;
+    background: white;
+    box-sizing: border-box;
+    transition: .5s;
+    border-radius: 3px;
+}
+.box::-webkit-scrollbar {
+    display: none;
+}
+#list::-webkit-scrollbar {
+    display: none;
+}
+.x{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.x:before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00d";
+    font-size: 20px;
+    color: #262626;
+    cursor: pointer;
+    transition: .5s;
+}
+.x:hover:before{
+    color: #bc2626
+}
+.txtBox {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    font-size: 17px;
+}
+.box.active {
+    max-height: 0%;
+    opacity: 0;
+    margin: 0;
+}
+.box.checked {
+    background: #b6ff00;
+}
+
+  /* footer part */
+
+  .footstart {
+    background-color: black;
+    color: white;
+    height: 10px;
+  display: inline-block;
+    }
+
+    .triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 15px solid white;
+    border-bottom: 12px solid transparent;
+    margin-left: 23%;
+     margin-top: 2%;
+    float: left;
+  }
+
+  .square {
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    margin-left: 18%;
+    margin-top: 4%;
+    border-radius: 5px;
+    float: left;
+  }
+
+  .rectangle {
+    height: 20px;
+    width: 53px;
+    background-color: white;
+    margin-left: 17%;
+     margin-top: 4%;
+    float: left;
+    border-radius: 8px;
+  }
+
+  .circle {
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 18%;
+    margin-top: 4%;
+    float: left;
+  }
